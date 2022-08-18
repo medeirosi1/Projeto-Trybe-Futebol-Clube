@@ -3,10 +3,10 @@ import Login, { createLogin } from '../interfaces/ILogin';
 import JwtService from './jwt.service';
 
 export default class Auth implements createLogin {
-  static async login(login: Login): Promise<string> {
+  login = async (login: Login): Promise<string> => {
     const { email, password } = login;
     // const user = User.findAll();
     const token = JwtService.sign({ email, password });
     return token;
-  }
+  };
 }
