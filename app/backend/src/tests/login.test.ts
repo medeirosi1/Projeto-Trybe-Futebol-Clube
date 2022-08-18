@@ -32,20 +32,27 @@ describe('Testando a rota Post /login', () => {
       sinon.restore();
     })
 
-  // it('...', async () => {
-  //   chaiHttpResponse = await chai
-  //      .request(app)
-  //      ...
-
-  //   expect(...)
-  // });
-
   it('se o status é 200', async () => {
-    const tokenString = await JwtService.sign(loginMock);
     const res = await chai.request(app).post('/login').send(loginMock);
     expect(res.status).to.be.equal(200);
+  });
+  it('Tem a propriedade Token e se retorno é um Token', async () => {
+    const tokenString = await JwtService.sign(loginMock);
+    const res = await chai.request(app).post('/login').send(loginMock);
     expect(res.body).to.be.haveOwnProperty('token');
     expect(res.body).to.deep.equal({token: tokenString})
+  })
+ })
+ 
+ describe('testando o caso de erro', () => {
+  it('se o status é 400 e da o erro no email', async () => {
+    const res = await chai.request(app).post('/login').send({ email: '', password: 'dawdwa'});
+    expect(res.status).to.be.equal(400);
+    expect(res.body.message).to.be.equal('All fields must be filled');
   });
- }) 
+  it('se o error é no password', async() => {
+    const res = await chai.request(app).post('/login').send({ email: 'dawdwadwa', password: ''});
+    expect(res.body.message).to.be.equal('All fields must be filled');
+  })
+ })
 }); 
