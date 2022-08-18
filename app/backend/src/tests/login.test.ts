@@ -4,9 +4,10 @@ import * as chai from 'chai';
 import chaiHttp = require('chai-http');
 
 import { app } from '../app';
-import User from '../database/models/User'
+// import User from '../database/models/User'
 
-import { Response } from 'superagent';
+// import { Response } from 'superagent';
+import JwtService from '../services/jwt.service';
 
 chai.use(chaiHttp);
 
@@ -17,23 +18,19 @@ const loginMock = {
   password: "senha"
 }
 
+//  let chaiHttpResponse: Response;
+
 describe('Testando a rota Post /login', () => {
   describe('Testando o caso de Sucesso', () => { 
     beforeEach(async () => {
       sinon
-        .stub(User, "findOne")
+        .stub(JwtService, 'sign')
         .resolves(loginMock)
     })
-  /**
-   * Exemplo do uso de stubs com tipos
-   */
 
-  // let chaiHttpResponse: Response;
-
-
-  // afterEach(()=>{
-  //   (Example.findOne as sinon.SinonStub).restore();
-  // })
+    afterEach(()=>{
+      sinon.restore();
+    })
 
   // it('...', async () => {
   //   chaiHttpResponse = await chai
@@ -43,8 +40,12 @@ describe('Testando a rota Post /login', () => {
   //   expect(...)
   // });
 
-  it('Seu sub-teste', () => {
-    expect(false).to.be.eq(true);
+  it('se o status é 200', async () => {
+    const tokenString = await JwtService.sign(loginMock);
+    const res = await chai.request(app).post('/login').send(loginMock);
+    expect(res.status).to.be.equal(200);
+    expect(res.body).to.be.haveOwnProperty('token');
+    expect(res.body).to.deep.equal({token: tokenString})
   });
-} 
+ }) 
 }); 
