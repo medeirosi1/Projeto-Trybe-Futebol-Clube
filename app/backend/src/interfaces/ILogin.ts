@@ -3,9 +3,13 @@ export default interface Login {
   password: string
 }
 
-// export interface token {
-//   token: string,
-// }
+export interface TokenFace {
+  token: string,
+}
+
+export interface AuthorizationToken {
+  authorization: TokenFace;
+}
 
 export interface createLogin {
   login(props: Login): Promise<string>,
