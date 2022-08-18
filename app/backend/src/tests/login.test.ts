@@ -35,7 +35,7 @@ const loginMock = {
   password: "secret_admin"
 }
 
-describe('Teste', () => {
+describe('Testando o Token de Login', () => {
   before(async () => {
     sinon
       .stub(JwtService, 'sign')
