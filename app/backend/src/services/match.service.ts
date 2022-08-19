@@ -20,8 +20,20 @@ export default class MatchService {
     return result;
   };
 
-  updatedMatch = async (id: number): Promise<void> => {
+  updatedfinish = async (id: number): Promise<void> => {
     await Match.update({ inProgress: false }, { where: { id } });
+  };
+
+  matchUpdated = async (data: object, id: number): Promise<void> => {
+    const allMatch = await Match.findByPk(id);
+    const emAndamento = allMatch?.inProgress;
+    if (emAndamento) {
+      await Match.update(data, { where: { id } });
+    } else {
+      const e = new Error('Partida já foi finalizada');
+      e.name = 'Unauthorized';
+      throw e;
+    }
   };
 
   create = async (match: Match): Promise<Match> => {
@@ -29,6 +41,14 @@ export default class MatchService {
     if (homeTeam === awayTeam) {
       const e = new Error('It is not possible to create a match with two equal teams');
       e.name = 'Unauthorized';
+      throw e;
+    }
+    const teams = await Team.findAll();
+    const homeIdExists = teams.some((elId) => elId.id === homeTeam);
+    const awayIdExists = teams.some((elId) => elId.id === awayTeam);
+    if (!homeIdExists || !awayIdExists) {
+      const e = new Error('There is no team with such id!');
+      e.name = 'NotFoundError';
       throw e;
     }
     const newMatch = await Match.create({
