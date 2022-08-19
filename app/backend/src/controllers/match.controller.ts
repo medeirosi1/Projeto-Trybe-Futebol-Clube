@@ -20,10 +20,16 @@ export default class MatchController {
     res.status(200).json(result);
   }
 
-  async updatedMatch(req: Request, res: Response): Promise<void> {
+  async updatedfinish(req: Request, res: Response): Promise<void> {
     const { id } = req.params;
-    await this.matchService.updatedMatch(Number(id));
+    await this.matchService.updatedfinish(Number(id));
     res.status(200).json({ message: 'Finished' });
+  }
+
+  async matchUpdated(req: Request, res: Response): Promise<void> {
+    const { id } = req.params;
+    await this.matchService.matchUpdated(req.body, Number(id));
+    res.status(200).json({ message: 'Xablau' });
   }
 
   async create(req: Request, res: Response): Promise<void> {
