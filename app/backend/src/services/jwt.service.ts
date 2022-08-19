@@ -12,7 +12,7 @@ export default class JwtService {
       const data = jwt.verify(token, process.env.JWT_SECRET || 'jwt_secret');
       return data as UserFace;
     } catch (e) {
-      const error = new Error('Invalid token');
+      const error = new Error('Token must be a valid token');
       error.name = 'Unauthorized';
       throw error;
     }
