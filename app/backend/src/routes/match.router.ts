@@ -7,7 +7,8 @@ const matchController = new MatchController(new MatchService(), new Auth());
 
 const matchRouter = Router();
 
-matchRouter.patch('/:id/finish', (req, res) => matchController.updatedMatch(req, res));
+matchRouter.patch('/:id/finish', (req, res) => matchController.updatedfinish(req, res));
+matchRouter.patch('/:id', (req, res) => matchController.matchUpdated(req, res));
 matchRouter.get(
   '/',
   (req, res) => matchController.getByQueryAndAll(req, res),
