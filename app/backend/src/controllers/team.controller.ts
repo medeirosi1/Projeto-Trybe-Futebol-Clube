@@ -4,7 +4,7 @@ import TeamService from '../services/team.service';
 export default class TeamController {
   constructor(private teamService: TeamService) {}
 
-  async list(req: Request, res: Response): Promise<void> {
+  async list(_req: Request, res: Response): Promise<void> {
     const result = await this.teamService.list();
     res.status(200).json(result);
   }
