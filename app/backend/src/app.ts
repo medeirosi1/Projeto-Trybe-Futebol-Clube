@@ -4,6 +4,7 @@ import authRouter from './routes/auth.route';
 import 'express-async-errors';
 import teamRouter from './routes/team.route';
 import matchRouter from './routes/match.router';
+import leaderboardRouter from './routes/leaderboard.route';
 
 class App {
   public app: express.Express;
@@ -18,6 +19,7 @@ class App {
     this.app.use('/login', authRouter);
     this.app.use('/teams', teamRouter);
     this.app.use('/matches', matchRouter);
+    this.app.use('/leaderboard', leaderboardRouter);
 
     this.app.use(errorMiddleware);
   }
