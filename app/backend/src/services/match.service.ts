@@ -24,6 +24,14 @@ export default class MatchService {
     await Match.update({ inProgress: false }, { where: { id } });
   };
 
+  allmatchInProgress = async () => {
+    const matchall = await Match.findAll(
+      { include: [{ model: Team, as: 'teamHome' }, { model: Team, as: 'teamAway' }] },
+    );
+    const finisheTeams = matchall.filter((elid) => elid.inProgress === true);
+    return finisheTeams;
+  };
+
   matchUpdated = async (data: object, id: number): Promise<void> => {
     const allMatch = await Match.findByPk(id);
     const emAndamento = allMatch?.inProgress;
