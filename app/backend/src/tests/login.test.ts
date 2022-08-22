@@ -96,6 +96,6 @@ describe('testando o login validate', () => {
 it('se caso der erro aparece a mensagem e o status', async () => {
    const res = await chai.request(app).get('/login/validate').set('Authorization', 'failToken');
    expect(res.status).to.be.equal(401);
-   expect(res.body.message).to.be.equal('Invalid token')
+   expect(res.body.message).to.be.equal('Token must be a valid token')
 })
 })
