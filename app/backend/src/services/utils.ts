@@ -42,7 +42,7 @@ const homeLeaderboard = {
   goalsOwn: (home: homeTeam[]) => {
     const goalsContra = home.map((el) => {
       let count = 0;
-      count += el.homeTeamGoals;
+      count += el.awayTeamGoals;
       return count;
     });
     return goalsContra.reduce((acc, curr) => acc + curr, 0);
@@ -106,6 +106,29 @@ export const awayLeaderboard = {
   efficiency: (away: homeTeam[]) => {
     const efficiency = (
       awayLeaderboard.totalPoints(away) / (awayLeaderboard.totalGames(away) * 3)) * 100;
+    return efficiency.toFixed(2);
+  },
+};
+
+export const allLeaderboard = {
+  totalGames: (home: homeTeam[], away: homeTeam[]) => home.length + away.length,
+  totalPoints: (home: homeTeam[], away: homeTeam[]) =>
+    homeLeaderboard.totalPoints(home) + awayLeaderboard.totalPoints(away),
+  totalVictories: (home: homeTeam[], away: homeTeam[]) =>
+    homeLeaderboard.totalVictories(home) + awayLeaderboard.totalVictories(away),
+  totalDraws: (home: homeTeam[], away: homeTeam[]) =>
+    homeLeaderboard.totalDraws(home) + awayLeaderboard.totalDraws(away),
+  totalLosses: (home: homeTeam[], away: homeTeam[]) =>
+    homeLeaderboard.totalLosses(home) + awayLeaderboard.totalLosses(away),
+  goalsFavor: (home: homeTeam[], away: homeTeam[]) =>
+    homeLeaderboard.goalsFavor(home) + awayLeaderboard.goalsFavor(away),
+  goalsOwn: (home: homeTeam[], away: homeTeam[]) =>
+    homeLeaderboard.goalsOwn(home) + awayLeaderboard.goalsOwn(away),
+  goalsBalance: (home: homeTeam[], away: homeTeam[]) =>
+    allLeaderboard.goalsFavor(home, away) - allLeaderboard.goalsOwn(home, away),
+  efficiency: (home: homeTeam[], away: homeTeam[]) => {
+    const efficiency = (
+      allLeaderboard.totalPoints(home, away) / (allLeaderboard.totalGames(home, away) * 3)) * 100;
     return efficiency.toFixed(2);
   },
 };
