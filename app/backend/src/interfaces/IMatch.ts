@@ -36,3 +36,18 @@ export interface TeamMatchHome {
     },
   ]
 }
+
+export interface TeamMatchAway {
+  id: number,
+  teamName: string,
+  awayMatch: [
+    {
+      id: number,
+      homeTeam: number,
+      homeTeamGoals: number,
+      awayTeam: number,
+      awayTeamGoals: number,
+      inProgress: boolean
+    },
+  ]
+}
