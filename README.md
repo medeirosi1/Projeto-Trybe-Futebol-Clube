@@ -16,7 +16,7 @@ O Projeto foi desenvolvido durante o **bloco 28 do módulo de BackEnd** no curso
 
 ## 🚀 Como executar o projeto
 
-Este projeto é divido em duas partes:
+Este projeto é divido em três partes:
 1. Backend 
 2. Frontend
 3. Testes
