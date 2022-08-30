@@ -16,10 +16,9 @@ O Projeto foi desenvolvido durante o **bloco 28 do módulo de BackEnd** no curso
 
 ## 🚀 Como executar o projeto
 
-Este projeto é divido em três partes:
-1. Backend 
-2. Frontend
-3. Testes
+Este projeto é divido em duas partes:
+1. Backend (app/backend)
+2. Frontend (app/frontend)
 
 💡Para o Frontend funcionar precisa que o Backend esteja sendo executado.
 
@@ -28,3 +27,17 @@ Este projeto é divido em três partes:
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+---
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
+
+-   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
+-   **[Axios](https://github.com/axios/axios)**
+
+
+> Veja o arquivo  [package.json]([https://github.com/tgmarinho/README-ecoleta/blob/master/web/package.json](https://github.com/medeirosi1/Projeto-Trybe-Futebol-Clube/blob/main/app/frontend/package.json))
