@@ -6,7 +6,7 @@
 	🚧   Concluído 🚀 🚧
 </h4>
 
-Um parágrafo da descrição do projeto vai aqui
+<p> Esse Projeto conta com o Frontend e o Backend, e é sobre uma tabela dee times femininos, onde se pode ver a tabelar e filtrar ela em diferentes resultados e podendo ser atualizado conforme as partidas forema sendo realizadas. </p>
 
 ## 🚀 Começando
 
