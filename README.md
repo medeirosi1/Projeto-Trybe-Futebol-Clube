@@ -79,5 +79,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
  <br />
  <sub><b>Thiago Medeiros</b></sub></a> <a href="https://github.com/medeirosi1" title="Github">🚀</a>
  <br />
+ 
+--
 
 [![Linkedin Badge](https://img.shields.io/badge/-Thiago_Medeiros-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tlmsilva/)](https://www.linkedin.com/in/tlmsilva/) 
