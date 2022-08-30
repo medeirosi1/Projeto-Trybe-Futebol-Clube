@@ -55,3 +55,19 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 > Veja o arquivo  [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/web/package.json](https://github.com/medeirosi1/Projeto-Trybe-Futebol-Clube/blob/main/app/frontend/package.json))
+
+#### **BackEnd**  ([NodeJS](https://nodejs.org/en/)  +  [TypeScript](https://www.typescriptlang.org/))
+
+-   **[Express](https://expressjs.com/)**
+-   **[nodemon](https://nodemon.io)**
+-   **[CORS](https://expressjs.com/en/resources/middleware/cors.html)**
+-   **[bcryptjs](https://github.com/dcodeIO/bcrypt.js)**
+-   **[jsonwebtoken](https://jwt.io)**
+-   **[ts-node](https://github.com/TypeStrong/ts-node)**
+-   **[dotENV](https://github.com/motdotla/dotenv)**
+-   **[mysql2](https://www.npmjs.com/package/mysql2)**
+-   **[express-async-errors](https://www.npmjs.com/package/express-async-errors)**
+-   **[Joi](https://github.com/hapijs/joi)**
+
+> Veja o arquivo  [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/server/package.json](https://github.com/medeirosi1/Projeto-Trybe-Futebol-Clube/blob/main/app/backend/package.json))
+
