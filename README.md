@@ -2,6 +2,10 @@
      Trybe Futebol Clube ⚽
 </h1>
 
+<h4 align="center">
+	🚧   Concluído 🚀 🚧
+</h4>
+
 Um parágrafo da descrição do projeto vai aqui
 
 ## 🚀 Começando
