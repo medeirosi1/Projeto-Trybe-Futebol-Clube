@@ -33,6 +33,11 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 $ git clone git@github.com:medeirosi1/Projeto-Trybe-Futebol-Clube.git
 ```
 
+**Instale as Dependências**
+```bash
+$ npm install
+```
+
 ---
 
 ## 🛠 Tecnologias
