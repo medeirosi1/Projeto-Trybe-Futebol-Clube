@@ -1,4 +1,6 @@
-# Projeto Trybe Futebol Clube ⚽
+<h1 align="center">
+     Trybe Futebol Clube ⚽
+</h1>
 
 Um parágrafo da descrição do projeto vai aqui
 
