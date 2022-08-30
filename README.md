@@ -40,6 +40,19 @@ $ git clone git@github.com:medeirosi1/Projeto-Trybe-Futebol-Clube.git
 $ npm install
 ```
 
+**Inicie o Docker-Compose, automaticamente o backend é aplicado**
+```bash
+$ npm run compose:up:dev
+```
+
+**Para ver o Projeto Funcionando**
+```bash
+$ cd app
+$ cd frontend
+$ npm start
+```
+
+Com esses passos o Projeto é para funcionar normal no Frontend com o Backend já iniciado.
 ---
 
 ## 🛠 Tecnologias
