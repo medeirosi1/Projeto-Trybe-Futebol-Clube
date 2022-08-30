@@ -6,7 +6,9 @@
 	🚧   Concluído 🚀 🚧
 </h4>
 
-<p> Esse Projeto conta com o Frontend e o Backend, e é sobre uma tabela dee times femininos, onde se pode ver a tabelar e filtrar ela em diferentes resultados e podendo ser atualizado conforme as partidas forema sendo realizadas. </p>
+## 💻 Sobre o projeto
+
+<p> O TFC - Trybe Futebo Clube ⚽ conta com o Frontend e o Backend, e é sobre uma tabela dee times femininos, onde se pode ver a tabelar e filtrar ela em diferentes resultados e podendo ser atualizado conforme as partidas forema sendo realizadas. </p>
 
 ## 🚀 Começando
 
