@@ -52,7 +52,7 @@ $ cd frontend
 $ npm start
 ```
 
-Com esses passos o Projeto é para funcionar normal no Frontend com o Backend já iniciado.
+<p> Com esses passos o Projeto é para funcionar normalmente no Frontend com o Backend já iniciado. </p>
 ---
 
 ## 🛠 Tecnologias
