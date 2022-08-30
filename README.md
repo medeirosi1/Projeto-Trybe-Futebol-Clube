@@ -40,4 +40,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[Axios](https://github.com/axios/axios)**
 
 
-> Veja o arquivo  [package.json]([https://github.com/tgmarinho/README-ecoleta/blob/master/web/package.json](https://github.com/medeirosi1/Projeto-Trybe-Futebol-Clube/blob/main/app/frontend/package.json))
+> Veja o arquivo  [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/web/package.json](https://github.com/medeirosi1/Projeto-Trybe-Futebol-Clube/blob/main/app/frontend/package.json))
