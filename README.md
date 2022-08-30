@@ -70,4 +70,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[Joi](https://github.com/hapijs/joi)**
 
 > Veja o arquivo  [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/server/package.json](https://github.com/medeirosi1/Projeto-Trybe-Futebol-Clube/blob/main/app/backend/package.json))
+---
 
+## 🦸 Autor
+
+<a href="https://github.com/medeirosi1">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/94460870?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Thiago Medeiros</b></sub></a> <a href="https://github.com/medeirosi1" title="Github">🚀</a>
+ <br />
+
+[![Linkedin Badge](https://img.shields.io/badge/-Thiago Medeiros-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tlmsilva/)](https://www.linkedin.com/in/tlmsilva/) 
