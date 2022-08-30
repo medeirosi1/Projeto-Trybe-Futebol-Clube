@@ -39,6 +39,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
 -   **[Axios](https://github.com/axios/axios)**
 -   **[React Scritps](https://www.npmjs.com/package/react-scripts)**
+-   **[Web Vitals](https://github.com/GoogleChrome/web-vitals)**
 
 
 > Veja o arquivo  [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/web/package.json](https://github.com/medeirosi1/Projeto-Trybe-Futebol-Clube/blob/main/app/frontend/package.json))
