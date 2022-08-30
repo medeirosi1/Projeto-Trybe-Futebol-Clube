@@ -28,11 +28,9 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-```bash
-
 # Clone este repositório
-$ git clone git@github.com:tgmarinho/README-ecoleta.git
-
+```bash
+$ git clone git@github.com:medeirosi1/Projeto-Trybe-Futebol-Clube.git
 ```
 
 ---
